@@ -1,0 +1,209 @@
+/*@author João Marcos de Aquino Gonçaves e João Victor Raimundo Guimarães*/
+*{
+    box-sizing: border-box;
+    font-family: monospace;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+header {
+    margin: 0 auto;
+}
+.container{
+    max-width: 1200px;
+    background-color: #f19e14;
+    margin: 0 auto;
+}
+.footer{
+    border: 1px #2b314b solid;
+    background-color: #2b314b;
+    text-align: right;
+    color: #f19e14;
+    
+}
+.conteudo {
+    max-width: 80%;
+    font-size: 19px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	margin: 0 auto;
+}
+.title{
+    text-align: center;
+    color:#eee;
+}
+.conteudo label {
+    display: table;
+    width: 100%;
+    padding: 4px;
+    color: #f19e14;
+
+}
+ 
+.conteudo input:hover{
+    color: #f19e14;
+    transform: scale(1.1);
+}
+
+.conteudo input {
+    padding: 3px;
+    width: 60%;
+    color: #2b314b;
+    background-color: #eee;
+    transition: transform .2s;
+
+}
+
+.menu {
+    border: 1px #2b314b solid;
+    background-color: #2b314b;
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #f19e14;
+    font-size: 18px;
+}
+.menu a:hover {
+    color: #f19e14;
+    
+}
+.esq{
+    width: 50%;
+    float: left;
+    padding: 4px;
+
+}
+
+.dir{
+    width: 50%;
+    float: left;
+    padding: 4px;
+}
+
+.esq1{
+    width: 50%;
+    float: left;
+    padding: 4px;
+}
+
+.dir1{
+    width: 50%;
+    float: left;
+    padding: 4px;
+}
+.pesquisar{
+    text-align: center;
+    padding: 33px;
+}
+.bloco1 .bloco2 label {
+    display: table;
+    width: 100%;
+    padding: 4px;
+    color: #f19e14;
+
+}
+ 
+.bloco1 .bloco2 input:hover{
+    color: #f19e14;
+    transform: scale(1.1);
+}
+
+.bloco1 .bloco2 input {
+    padding: 3px;
+    width: 30%;
+    color: #f19e14;
+    background-color: #eee;
+    transition: transform .2s;
+
+}
+.bloco1{
+    width: 50%;
+    float: left;
+    padding: 4px;
+}
+.bloco2{
+    width: 50%;
+    float: left;
+    padding: 4px;
+}
+.voltar{
+    text-align: center;
+}
+#matricula{
+    margin-right: 81px;
+}
+.menu a:hover {
+    -webkit-animation-name: flash;
+    animation-name: flash;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes flash {
+    0%, 50%, 100% {
+    opacity: 1;
+    }
+    
+    25%, 75% {
+    opacity: 0;
+    }
+    }
+    
+    @keyframes flash {
+    0%, 50%, 100% {
+    opacity: 1;
+    }
+    
+    25%, 75% {
+    opacity: 0;
+    }
+    } 
+.reset:active {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes shake {
+    0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    }
+    20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+    }
+    }
+    @keyframes shake {
+    0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    }
+    20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+    }
+} 

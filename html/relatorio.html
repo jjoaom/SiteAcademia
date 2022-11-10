@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="html/normalize.css">
+    <link rel="stylesheet" href="html/form.css">
+    <title>Sistema Academia DumbFit</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header clearfix">
+            <div class="menu clearfix">
+                <nav>
+                    <ul>
+                        <li><a href="cadastro.php">Cadastro</a></li>
+                        <li><a href="#financeiro">Financeiro</a></li>
+                        <li><a href="#adminstrador">Administrador</a></li>
+                        <li><a href="index.html">Sair</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <main class="conteudo clearfix">
+                <h2 class="title">Relatorio</h2>
+                <form enctype="multipart/form-data" action="cadastro.php" method="post">
+    
+                    <div class="esq">
+                        <label for="">MATRICULA<input type="text" id="matricula" name="txtMatricula" value="{matricula}"  readonly></label>
+                        <label for=""><input type="text" name="txtNome" value="{nome}" placeholder="Nome"></label>
+                        <label for=""><input type="text" name="txtCelular" value="{celular}" placeholder="Celular"></label>
+                        <label for=""><input type="email" name="txtEmail" value="{email}" placeholder="Email"></label>
+                        <label for=""><input type="text" name="txtNascimento" value="{nascimento}" placeholder="Nascimento"></label>
+                        <label for=""><input type="text" name="txtIdade" value="{idade}" placeholder="Idade"></label>
+                        <label for=""><input type="text" name="txtPeso" step="0.001" value="{peso}" placeholder="Peso"></label>
+                    </div>
+    
+                    <div class="dir">
+                        <label for=""><input type="text" name="txtEndereco" value="{endereco}" placeholder="Endereço"></label>
+                        <label for=""><input type="text" name="txtCep" value="{cep}" placeholder="CEP"></label>
+                        <label for=""><input type="text" name="txtBairro" value="{bairro}" placeholder="Bairro"></label>
+                        <label for=""><input type="text" name="txtCidade" value="{cidade}" placeholder="Cidade"></label>
+                        <label for=""><input type="text" name="txtUf" value="{uf}" placeholder="UF"></label>
+                        <label for=""><input type="text" name="txtSexo" value="{sexo}" placeholder="Sexo"></label>
+                        <label for=""><input type="text" name="txtAltura" step="0.001" value="{altura}" placeholder="Altura"></label>
+
+                        <div>
+                            <label for="">IMC</label>
+                            <input type="number" name="txtImc" step="0.01" value="{imc}" readonly>
+
+                            <label for="">RESULTADO</label>
+                            <input type="text" name="txtResultado" value="{resultado}" readonly>
+                        </div>
+                        
+                    </div>
+                    
+                </form>
+            </main>
+        </section>
+        <section>
+            <div class="">
+                <button type="button" class="voltar" onclick="window.location='cadastro.php'">VOLTAR</button>
+            </div>
+        </section>
+
+        
+        <footer class="footer clearfix">
+            <h4>@Tudo Frango 2021 - Todos os direitos reservados.</h4>
+        </footer>
+    </div>
+</body>
+</html>
